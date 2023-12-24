@@ -43,7 +43,7 @@ $(BUILDDIR):
 	rm -rf $@ $@.tmp
 	mkdir $@.tmp
 	cp -a debian/ src/ Makefile Cargo.toml $@.tmp
-	echo "git clone git://git.proxmox.com/git/pve-xtermjs.git\\ngit checkout $$(git rev-parse HEAD)" \
+	echo "git clone https://github.com/jiangcuo/pve-xtermjs.git\\ngit checkout $$(git rev-parse HEAD)" \
 	    > $@.tmp/debian/SOURCE
 	mv $@.tmp $@
 
