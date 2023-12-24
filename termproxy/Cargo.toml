@@ -23,3 +23,8 @@ pico-args = "0.4"
 proxmox-io = "1"
 proxmox-lang = "1.1"
 ureq = { version = "2.4", default-features = false, features = [ "gzip" ] }
+
+[patch.crates-io]
+proxmox-io = { git = "https://github.com/jiangcuo/proxmox" , branch = "loongarch64" }
+proxmox-lang = { git = "https://github.com/jiangcuo/proxmox" , branch = "loongarch64" }
+nix  = { git = "https://github.com/jiangcuo/nix" , branch = "r0.26" }
